@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/main.js',
+  entry: './src/js/app.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -28,10 +28,6 @@ module.exports = {
                'style-loader',
                'css-loader'
              ]
-           },
-           {
-            test: /\.json$/,
-            loader: 'json-loader'
            },
            { test: /\.js$/, 
             exclude: /node_modules/, 
