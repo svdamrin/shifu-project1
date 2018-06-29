@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './router';
+import jsonData from '../data/list.json'
+
+
+localStorage.setItem("myJsonData", JSON.stringify(jsonData));
 
 
 ReactDOM.render(

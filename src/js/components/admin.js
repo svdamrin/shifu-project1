@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import data from '../list.json'
+//import data from '../list.json'
 
 
+var grabMyJsonData = localStorage.getItem("myJsonData")
+var data = JSON.parse(grabMyJsonData)
+//console.log(data)
 class Admin extends Component {
    render() {
       return (
